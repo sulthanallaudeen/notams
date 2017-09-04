@@ -1,0 +1,126 @@
+/*Resource reset
+@import 'general.css';*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+body {color:#333; font-size:12pt; line-height: 1.25;}
+a {text-decoration:none;}
+a:hover {text-decoration: underline;}
+em {font-style:italic; font-weight:inherit;}
+strong {font-weight:bold; font-style:inherit;}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';}
+li li, li p, td p, blockquote p {font-size:1em;}
+:focus {outline:0;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+
+/* TOOLS */
+.clear:after {display:block; visibility:hidden; clear:both; height:0; content: ".";}
+
+/* PAGE CONTENT: USER INPUT */
+.content {clear:left; font-family:Arial, Helvetica, sans-serif; font-size:0.9em; line-height:1.35; text-align:left; margin-top:10px; border-top:1px solid #ccc;}
+
+/* Element Spacing: Top-Down
+.content p, .content ul, .content ol, .content dl, .content table, .content blockquote, .content form, .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {margin:15px 0 2px 0;}
+.content *.join, .content *.afterp {margin-top:2px;} */
+
+/* Links */
+.content a {color:#700;}
+
+/* CSS3: Link Printing */
+.content a:after {color:#111; content:" (" attr(href) ") ";   font-size:0.8em;}
+
+
+/* Headings */
+.content h1 {font-size:1.3em;}
+.content h2 {font-size:1.2em;}
+.content h3, .content h4, .content h5, .content h6 {font-size:1.1em;} /*3 visual heading levels enforced*/
+
+/* Lists */
+.content dt {margin:10px 0 2px 0; font-weight:bold;}
+.content dd {margin:2px 0 2px 15px;}
+
+.content ul {margin-left:0; padding-left:4px;}
+	.content ul > li {list-style-type:none; background:transparent url("../images/list_bullet.gif") left 6px no-repeat; padding-left:12px;}
+	.content ul ul > li {list-style-type:none; background:transparent url("../images/list_bullet_indent.gif") left 8px no-repeat;}
+.content ol {list-style-position:outside; padding-left:28px;}
+	.content ol > li {list-style-type:decimal;}
+	.content ol ol > li {list-style-type:lower-alpha;}
+	.content ol ol ol > li {list-style-type:lower-roman;}
+.content ul ol, .content ul ul, .content ol ul, .content ol ol {font-size:1.0em; margin-bottom:2px; margin-top:2px;}
+
+.content li.more {background-image:none; list-style:none; list-style-image:none; font-weight:normal; font-size:0.9em; margin-top:5px;}
+.content li.more a {font-weight:bold;}
+.content ul.oversized li li, .content ol.oversized li li, .content ul.oversized li li li, .content ol.oversized li li li {margin:0 0 0 0;}
+.content ul.oversized li, .content ol.oversized li, .content ul.oversized li ol.oversized li, .content ul.oversized li ul.oversized li, .content ol.oversized li ol.oversized li, .content ol.oversized li ul.oversized li {margin:10px 0;}
+
+/* Visual Anchoring */
+.content a.anchorUp, .content a.anchor-up, .content a.anchorDown, .content a.anchor-down {background-color:transparent; background-position:left center; background-repeat:no-repeat; padding:0 0 0 11px;}
+.content a.anchorUp, .content a.anchor-up {background-image:url("../images/anchor_up.gif");}
+.content a.anchorDown, .content a.anchor-down {background-image:url("../images/anchor_down.gif");}
+.content ul.anchor-down li, .content ul.anchorDown li {background-image:url("../images/anchor_down.gif"); background-position:left 5px;}
+.content ul.anchor-up li, .content ul.anchorUp li {background-image:url("../images/anchor_up.gif"); background-position:left 4px;}
+
+/* Images */
+.content img.border {border:1px solid #1d1d1d;}
+.content img.left, .content div.left {float:left; margin:0 4px 4px 0;}
+.content img.right, .content div.right {float:right; margin:0 0 4px 4px;}
+.content div.image img {display:block;}
+.content div.s1 img, .content div.s3 img {border:1px solid #3d3d3d; margin:0 auto;}
+.content div.s2 img {margin:0 auto;}
+.content div.s2, .content div.s3 {border:1px solid #3d3d3d; padding:2px 0; background:#f1f1f1;}
+.content div.image p.caption {margin:0 auto; font-style:italic; font-size:76%;}
+
+/* Super/subscript */
+.content sup {font-size:0.76em; padding-left:1px; position:relative; top:-3px; line-height:0;}
+.content sub {font-size:0.76em; padding-left:1px; position:relative; bottom:-3px; line-height:0;}
+
+/* SPACING (legacy) */
+.content p {margin:1px 0 16px;}
+.content dl, .content table, .content blockquote, .content form, .content h1, .content h3, .content h4, .content h5, .content h6 {margin:2px 0 15px 0;}
+.content ul, .content ol {margin:3px 0 15px;}
+.content h2 {margin:14px 0 1px;}
+.content *.afterp {margin-top:-13px;}
+.content *.join {margin-top:2px;}
+
+/* Tables (legacy) */
+.content table {border:1px solid #666;}
+.content table caption {font-size:0.9em; font-weight:bold; text-align:left;}
+.content table th, .content table td {padding:4px;}
+.content thead tr {}
+	.content thead tr th {text-align:center; font-weight:bold; font-size:0.9em; border:1px solid #666;}
+		.content thead tr.level_one th, .content thead tr.level-one th {background-color:#dfdfdf;}
+	.content thead tr th.left, #content thead tr.left th {text-align:left;}
+	.content thead tr td {display:none;}
+.content tbody td {text-align:left; border:1px solid #666;}
+	.content tbody tr.odd td, .content tbody tr.alt-bg td {background-color:#f1f1f1;}
+	.content tbody tr td.span-left, .content tbody tr th.span-left {border-right:1px dotted #e9e9e9;}
+	.content tbody tr td.alt-span-left, .content tbody tr th.alt-span-left {border-right:1px dotted #fff;}
+	.content tbody tr td.span-right, .content tbody tr th.span-right {border-left:1px dotted #e9e9e9;}
+	.content tbody tr td.alt-span-right, .content tbody tr th.alt-span-right {border-left:1px dotted #fff;}
+	.content tbody tr.inner-row td, .content tbody tr.inner-row th {border-top:1px dotted #e9e9e9;}
+	.content tbody tr.alt-inner-row td, .content tbody tr.alt-inner-row th {background-color:#f1f1f1;}
+.content tbody tr th {font-size:1.05em; font-weight:bold; text-align:center; border:1px solid #666;}
+.content tfoot td, #content tfoot th {font-size:0.8em; text-align:left; border:1px solid #666;}
+.content table.centered tbody td, .content table tbody td.centered, .content table tbody tr.centered td, .content table tbody tr.centered th, .content table.centered tfoot td, .content table tfoot td.centered, .content table tfoot th.centered, .content table tfoot tr.centered td, .content table tfoot tr.centered th {text-align:center;}
+.content table tbody td.right, .content table tbody th.right, .content table tbody tr.right td, .content table tbody tr.right th, .content table tfoot td.right, .content table tfoot th.right, .content table tfoot tr.right td, .content table tfoot tr.right th {text-align:right;}
+
+/* Hidden Items */
+#legacyMode, #googleBox, #skipLinks, #topNav, #hNav, #vNav, #pageTools, #rightSidebar, #logoLink, #breadcrumbs, #textLinks, #readersViewers, #address, #printPage, #footer {display:none;}
+
+
+/* STANDARD PRINT OPTIONS */
+html, body {background:#fff none;}
+
+img.forPrint {display:block; padding-bottom:10px; zoom:1;}
+
+h1.pageTitle {font-size:1.5em;} 
+h1.pageSubtitle {font-size:1.15em; color:#333; width:70%; text-align:right; float:right; clear:right;}
+#lastUpdateDate {width:70%; text-align:right; float:right; clear:right;}
+
+p.pageUrl {border-top:1px solid #ccc; clear:both; font-size:0.9em; font-weight:bold; text-align:center; padding-top:10px;}
+
+/* GLOBAL STYLES */
+.hidden {display:none;}
+small, .small {font-size:0.85em;}

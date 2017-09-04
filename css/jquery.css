@@ -1,0 +1,104 @@
+/* SPECIAL FORM STYLES */
+	input.error {background: #FCC;}
+	input.lightGrey { color: #999; }
+
+/* Links */
+#modalDialog a, #modalDialog a:link {color:#069; text-decoration:underline;}
+	#modalDialog ul a, #modalDialog ul a:link {text-decoration:none;}
+#modalDialog a:visited, #modalDialog ul a:visited {color:#5496c2;}
+#modalDialog a:hover, #modalDialog ul a:hover {color:#5496c2; text-decoration:underline;}
+#modalDialog a:active, #modalDialog ul a:active {color:#069; text-decoration:underline;}
+#modalDialog a:focus, #modalDialog ul a:focus {outline:1px dotted #444;}
+#modalDialog a.exiter, #modalDialog a[href^='/exit/'] {background:transparent url("../images/exit_button.gif") right 2px no-repeat; padding-right:13px;}
+#modalDialog a.anchorUp, #modalDialog a.anchorDown {background-color:transparent; background-position:left center; background-repeat:no-repeat; padding:0 0 0 11px;}
+#modalDialog a.anchorUp {background-image:url("../images/anchor_up.gif");}
+#modalDialog a.anchorDown {background-image:url("../images/anchor_down.gif");}
+
+/* MODAL STYLES */
+#modalDialog div.ui-dialog-container { padding: 8px; zoom: 1; }
+div.ui-widget-overlay { position: absolute; top: 0; left: 0; background-color: #666; opacity: 0.6; }
+#modalDialog { text-align: left;background: #E8E8E8 url("../images/mod_content-gradient.gif") left top repeat-x; font-family: Arial, Helvetica, sans-serif;}
+.ui-dialog-content {border: 2px solid #FFF;}
+div.ui-dialog-titlebar { border: 2px solid #FFF;background-color:#FFF; color: #375A74; font-size: 1.4em; font-weight: bold; font-family: Arial, Helvetica, sans-serif; 	overflow: auto; padding-bottom: 0; margin-right: 16px; }
+span.ui-dialog-title { display: block; float: left; padding-left: 8px; width: auto; overflow: hidden; height: 26px;padding-top: 4px; }
+a.ui-dialog-titlebar-close { position: absolute; top: 2px;left: 540px; display: block; width: 42px; height: 35px;  background: transparent url("../images/modal_close.gif") top left repeat-x; text-align: center; vertical-align: middle; border: none; text-decoration: none; padding-top: 0;}
+a.ui-dialog-titlebar-close span { 	color: #FFF; font-weight: bold;font-size: 0.7em; }    
+	
+#modalDialog form.layout fieldset p { margin-left: 0; padding-left: 0;}
+#modalDialog form.layout div.formRow input {margin-top: 3px; }
+#modalDialog form.layout div.formRow label {font-weight: bold; }
+#modalDialog div.message-box { width: 480px; margin: 10px 30px;  }
+#modalDialog div.message-box li p { font-size: 1.0em; margin-left: 8px; }
+#modalDialog #loadingGraphic { position: relative; top: 25%; left: 25%; }
+#modalDialog #modalContent { padding-right: 10px; } 
+#modalDialog #modalContent p { margin-bottom: 10px; } 
+	
+/* AUTOCOMPLETE */
+.ac_results { margin: 0 2px;padding: 0px;border: 1px solid #036;background-color: white;overflow: hidden;z-index: 99999; }
+.ac_results ul { width: 100%;list-style-position: outside;list-style: none;padding: 0;margin: 0;}
+.ac_results li { margin: 0px;	text-align: left;padding: 2px 5px;cursor: default;display: block;font: menu;font-size: 12px;line-height: 16px;overflow: hidden;}
+.ac_loading {background: white url('indicator.gif') right center no-repeat;}
+.ac_odd {	background-color: #EFEFEF;}
+.ac_over {background-color: #036;color: white;}
+ 	
+/* N-NUMBER */
+#nNumberWidget { padding: 2px; position: relative; }
+.nNumberWidget { background: #FFF url("../images/mod_content-gradient.gif") left bottom repeat-x; }  
+#nNumberWidget fieldset { margin: 0; padding: 0; }
+#nNumberWidget .formRow { padding: 0 2px; margin: 8px 0 0 4px;   }
+#nNumberWidget .formRow label { font-size: 1.25em; font-weight: bold; width: auto; padding-top: 0; display: inline; float: none; color: #FFF; padding: 0; }
+#nNumberWidget .formRow #NNumbertxt { float: none; border: 1px solid #999; -moz-border-radius: 5px; width: 105px; height: 20px;  padding: 6px 32px 0 8px; margin-left: 0; margin-bottom: 10px; }  
+#nNumberWidget .formRow #helpIcon { margin-bottom: -3px; margin-left: -26px; margin-right: 5px; }
+#nNumberWidget .formRow #submitNNum { margin: 0 0 -8px 0; float: none; padding: 0; }
+#modalDialog #nNumberWidget .formRow #submitNNum { margin-top: 4px !important; }
+#modalDialog #nNumberWidget .formRow #NNumbertxt { margin-top: 4px !important; }
+#modalDialog #nNumberWidget .formRow  { margin-top: 0; }
+#nNumberWidget .message-box { width: 335px !important; position: absolute; left: 130px; top: 0px; } 
+#nNumberWidget .message-box ul li { background-image: none; padding-left: 8px; list-style-image: none;  }
+#nNumberWidget .message-box ul li ul { padding-left: 8px; font-size: 1.0em;  }
+#nNumberWidget .message-box ul li ul li { padding-left: 0; list-style-type: disc; list-style-position: inside; font-weight: normal; }
+#nNumErrorMessage p a.closeWindow { color: #900 !important; margin-bottom: 0; padding-top: 10px; text-decoration: underline !important;  }
+#modalDialog #ajaxContent #nnlinkList { position: absolute; right: 10px; top: 50px; width: 300px; border-left: 1px dotted #FFF; padding-left: 16px;  }
+#modalDialog #ajaxContent #nnlinkList a { color: #FFF; font-weight: bold; }
+#modalDialog #ajaxContent #nNumberWidget {background:#85C1CC url("../images/aptStat_search_gradient.png") left bottom repeat-x; padding: 5px; }
+#modalDialog #ajaxContent #nNumberWidget .message-box { width: 283px !important; position: absolute; left: 180px; top: -54px; z-index: 1000; overflow: visible; } 
+#modalDialog #ajaxContent #nNumberWidget .message-box ul { margin-left: 0px; }
+#modalDialog #ajaxContent #nNumberWidget #nNumErrorMessage { overflow: auto; } 
+#modalDialog #ajaxContent #nNumberWidget #nNumErrorMessage p a.closeWindow { margin-bottom: 2px; } 
+
+#searchContainer {vertical-align:middle; margin: 0 0 20px 0;}
+#searchContainer, #formSearchAdvisoryCirculars, #formSearchDirectives {background:#85C1CC url("../images/aptStat_search_gradient.png") left bottom repeat-x; padding: 5px; }
+#searchContainer #wfq, #formSearchAdvisoryCirculars #wfq, #formSearchDirectives #wfq {width: 97%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border: 1px solid #999; height: 18px;  padding-top: 4px; padding-left: 4px;}
+#searchContainer select, #formSearchAdvisoryCirculars select, #formSearchDirectives select {width: 120px; padding: 2px 3px 2px 1px; border: 1px solid #999; -moz-border-radius: 4px; -webkit-border-radius: 4px; margin: 0;}
+#searchContainer input.primary, #formSearchAdvisoryCirculars input.primary, #formSearchDirectives input.primary {width: 90px; border: 1px solid #999; -moz-border-radius: 4px; -webkit-border-radius: 4px; margin: 0; padding: 4px 4px 3px 4px; margin: 0 8px; color: #444; float:right;}
+#searchContainer label, #formSearchAdvisoryCirculars label, #formSearchDirectives label {padding: 0 4px; margin: 0; color: #FFF;}
+#searchContainer fieldset {margin: 2px 0;}
+#searchContainer canvas {display: none !important;}
+
+.adSearchFormMessage {margin-right:10px; margin-bottom:10px;}
+#formSearchADs {padding:0 5px 0 0; margin:0 10px 0 0;}
+#formSearchADs fieldset {border:none;}
+#formSearchADs .formRow, #formSearchADs .formRowIndented {margin:10px 0;}
+#formSearchADs .formRowIndented {padding-left:70px;}
+#formSearchADs label {clear:none; text-align:right; font-weight:bold; margin-left:9px; margin-right:5px}
+#formSearchADs input.button {float:right}
+#formSearchADs .legend {font-size:1em; font-weight:bold; display:block; width:100%; padding:2px 8px; margin-top:0;}
+#formSearchADs h2.legend {border-bottom:1px solid #A4AFAD; color:#036;}
+#formSearchADs select {width:100px;}
+
+/* ORDERS & NOTICES */
+.ordersNoticesSearch #ordNotText, .advisoryCircularsSearch #acText { margin: 10px; }
+.ordersNoticesSearch #ordNotText a, .advisoryCircularsSearch #acText a { font-weight: bold; }
+#formSearchDirectives, #formSearchAdvisoryCirculars { padding: 5px !important; margin: 0;}
+#formSearchDirectives .hidden, #formSearchAdvisoryCirculars .hidden { display: none !important; }
+#formSearchDirectives #wfq, #formSearchAdvisoryCirculars #wfq { padding: 2px; margin: 0 2px;}
+#formSearchDirectives .multiInput label, #formSearchDirectives .multiInput .primary { float: none; display: inline; font-weight: bold; width: auto; margin-left: 10px; }
+#formSearchAdvisoryCirculars .multiInput label, #formSearchAdvisoryCirculars .multiInput .primary { float: none; display: inline; font-weight: bold; width: auto; margin-left: 6px; }
+#formSearchDirectives div.message-box, #formSearchAdvisoryCirculars div.message-box { width: 415px; margin: 0 0 5px 0;  }
+#formSearchDirectives div.message-box li, #formSearchAdvisoryCirculars div.message-box li { font-size: 1.0em; margin-left: 18px; }
+#document-search-container #formSearchDirectives div.message-box li { font-size: 1.0em; margin-left: 8px; }
+#document-search-container #formSearchDirectives div.message-box ul { margin-top: 0; }
+/* EMAIL PAGE */
+#emailPageForm .subject input { width: 325px; }
+#emailPageForm p span.required span.small {font-size: 0.7em;}
+#emailPageForm input.readOnly { background-color: transparent; border-bottom: 1px dotted #222; }
