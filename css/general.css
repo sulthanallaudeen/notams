@@ -85,7 +85,7 @@ div.loading p, div.loading ul {color:#888;}
  *                   - 2.6em = 32px
  *                   - 2.8em = 34px
  */
-html, body {background:#f4f6f7 url("../images/bodyBg_tile.png") left top repeat-x; text-align:center;}
+html, body {background:white url("../images/bodyBg_tile.png") left top repeat-x; text-align:center;}
 
 /* Primary containing block for all page areas. */
 #widthControl {background-color:#fff; margin:10px auto; text-align:left; width:940px; padding:10px;}
