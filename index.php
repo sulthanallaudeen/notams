@@ -5,6 +5,12 @@
 #checkBoxLeft{
     display:none;
 }
+#resultsHomeLeft{
+    width:50%;
+}
+#resultsSort{
+    display:none;
+}
 </style>
 <div class="row">
 <div class="col-md-4">
