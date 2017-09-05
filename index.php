@@ -12,8 +12,8 @@
 <div class="col-md-4">
 <br>
 <?php
-if($_POST){
-    $code = $_POST['code'];
+if($_GET){
+    $code = $_GET['code'];
     $code = strtoupper($code);
 }
 else{
@@ -22,7 +22,7 @@ else{
 ?>
 <h2>NOTAM Retrieval API</h2>
 <p style="float:right"><a target="_new" href="https://pilotweb.nas.faa.gov/PilotWeb/">Source</a></p>
-<form method="POST" action="">
+<form method="GET" action="">
   <div class="form-group">
     <label for="email">ICAO Name:</label>
     <input type="text" class="form-control" id="email" name="code" required value="<?php echo $code?>">
@@ -36,13 +36,13 @@ else{
 <?php
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET');
-if($_POST){
-if($_POST['code']==''){
+if($_GET){
+if($_GET['code']==''){
     $error ="Code should not be empty";
     echo $error;
 }
 else{
-$url = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=ICAO&retrieveLocId=".$_POST['code']."&actionType=notamRetrievalByICAOs";
+$url = "https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=ICAO&retrieveLocId=".$_GET['code']."&actionType=notamRetrievalByICAOs";
 $data =  file_get_contents($url);
 echo $data;
 }
