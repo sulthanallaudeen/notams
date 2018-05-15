@@ -1,5 +1,5 @@
 <html>
-<title>NOTAM Retrieval API - Notice to Airmen</title>
+<title>NOTAM - Notice to Airmen : Retrieval API</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <style>
 #checkBoxLeft{
